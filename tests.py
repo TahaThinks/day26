@@ -11,3 +11,8 @@ print(doubled_numbers)
 name = "Angela"
 new_name = [letter for letter in name]
 print(new_name)
+
+# Conditional List Comprehension
+names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+short_names = [name for name in names if len(name)==4]
+print(short_names)
