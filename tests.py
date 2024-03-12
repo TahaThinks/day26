@@ -21,7 +21,13 @@ print(new_name)
 names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
 short_names = [name for name in names if len(name) < 5]
 print(short_names)
+
 # Conditional List Comprehension 2
 long_names = [name.upper() for name in names if len(name) >= 5]
 print(long_names)
+
+# Conditional List Comprehension 3
+numbers_3 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+even_numbers = [number for number in numbers_2 if number % 2 == 0]
+print(even_numbers)
 
