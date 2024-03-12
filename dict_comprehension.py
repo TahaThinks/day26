@@ -9,6 +9,6 @@
 sentence = "What is the Airspeed velocity of an Unladen Swallow?"
 
 words_list = [word for word in sentence.split()]
-print(result)
+print(words_list)
 words_dict = {word:len(word) for word in words_list}
 print(words_dict)
