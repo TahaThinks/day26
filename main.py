@@ -10,3 +10,6 @@ nato_phonetic_dict = {row.letter: row.code for (index, row) in nato_phonetic_dat
 
 word = input("Enter a Word: ").upper()
 # print(word)
+
+word_phonetic = [nato_phonetic_dict[letter] for letter in word]
+print(word_phonetic)
