@@ -8,11 +8,15 @@ nato_phonetic_data_frame = pandas.read_csv("nato_phonetic_alphabet.csv")
 nato_phonetic_dict = {row.letter: row.code for (index, row) in nato_phonetic_data_frame.iterrows()}
 # print(nato_phonetic_dict)
 
-word = input("Enter a Word: ").upper()
-# print(word)
-try:
-    word_phonetic = [nato_phonetic_dict[letter] for letter in word]
-except KeyError:
-    print("Sorry, only letters in the alphabet please")
-else:
-    print(word_phonetic)
+def generate_photenic():
+    word = input("Enter a Word: ").upper()
+    # print(word)
+    try:
+        word_phonetic = [nato_phonetic_dict[letter] for letter in word]
+    except KeyError:
+        print("Sorry, only letters in the alphabet please")
+        generate_photenic()
+    else:
+        print(word_phonetic)
+
+generate_photenic()
